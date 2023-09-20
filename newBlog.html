@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Blog</title>
+	</head>
+
+	<body>
+		<h2>
+			<a href="localhost:8080/examples/servlets/servlet/HomePage">Home</a>
+			&nbsp;&nbsp;
+			<a href="localhost:8080/examples/servlets/servlet/BlogPage?blog_id=new">Latest</a>
+		</h2>
+		<p>New Blog</p>
+		<form name="newBlog" method="post" action="http://127.0.0.1:8080/examples/servlets/servlet/NewBlog">
+			<table border='1'>
+				<tr>
+					<td>Title</td>
+					<td><input type=textbox name="blog_title" maxlenght=100 value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Intro</td>
+					<td><input type=textbox name="blog_intro" maxlength=250 value=""></td>
+				</tr>
+
+				<tr>
+					<td>Main</td>
+					<td><input type=textbox name="blog_para" maxlength=500 value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Outro</td>
+					<td><input type=textbox name="blog_outro" maxlength=250 value=""></td>
+				</tr>
+			</table>
+			<br>
+			<input type=submit value="Submit">
+		</form>
+	</body>
+</html>

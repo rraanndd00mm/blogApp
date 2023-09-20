@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Blog</title>
+	</head>
+
+	<body>
+		<p>NEW BLOG</p>
+		<form name="newBlog" method="post" action="http://127.0.0.1:8080/examples/servlets/servlet/NewBlog">
+			<table border='1'>
+				<tr>
+					<td>Title</td>
+					<td><input type=textbox name="blogTitle" maxlenght=100 value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Intro</td>
+					<td><input type=textbox name="blogIntro" maxlength=250 value=""></td>
+				</tr>
+
+				<tr>
+					<td>Main</td>
+					<td><input type=textbox name="blogPara" maxlength=500 value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Outro</td>
+					<td><input type=textbox name="blogOutro" maxlength=250 value=""></td>
+				</tr>
+			</table>
+			<br>
+			<input type=submit value="Submit">
+		</form>
+	</body>
+</html>
